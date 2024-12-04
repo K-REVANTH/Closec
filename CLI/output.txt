@@ -1,0 +1,301 @@
+(cenv) E:\Internships\Cy5.io\Github\closec\CLI>python main.py -i ubuntu:latest
+2024-08-12 15:45:02,257 - INFO - Database 'closec_cve' already exists.
+
+
+         ▄████▄    ██▓      ▒█████     ██████   ▓█████   ▄████▄  
+        ▒██▀ ▀█   ▓██▒     ▒██▒  ██▒  ▒██      ▒▓█   ▀  ▒██▀ ▀█  
+        ▒▓█       ▒██░     ▒██░  ██▒░  ▓█████  ▒████    ▒▓█     
+        ▒▓▓▄ ▄██▒ ▒██░     ▒██   ██░   ▒   ██▒  ▓█   ▄   ▓▓▄ ▄██▒
+        ▒ ▓███▀ ░ ░██████▒  ░████▓▒░▒  ██████▒  ██████▒  ▓████▀░
+        ░ ░▒ ▒  ░ ░ ▒░░  ░░  ▒░▒░▒░ ▒  ░▒ ▒ ░░  ░ ░░ ░▒    ░ ░ ░
+        ░  ▒   ░  ░ ▒  ░  ░  ▒ ▒░ ░ ░▒  ░ ░ ░ ░  ░  ░  ▒    ░ ░
+        ░          ░ ░   ░    ░ ▒  ░    ░     ░   ░          ░
+    
+Pulling ubuntu:latest...
+Extracting Image ubuntu:latest...
+2024-08-12 15:45:14,464 - INFO - Scanning Image for Packages...
+Scanning images/files_ubuntu_latest/var/lib/dpkg/status
+2024-08-12 15:45:14,464 - INFO - Scanning Image for Secrets...
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.3",
+    "components": {
+        "Image": "ubuntu:latest",
+        "Image_Info": {
+            "Architecture": "amd64",
+            "Layers": [
+                "ARG RELEASE",
+                "ARG LAUNCHPAD_BUILD_ARCH",
+                "LABEL org.opencontainers.image.ref.name=ubuntu",
+                "LABEL org.opencontainers.image.version=24.04",
+                "ADD file:5601f441718b0d192d73394b35fd07675342837ec9089ddd52dd1dc0de79630e in /",
+                "CMD [\"/bin/bash\"]"
+            ],
+            "No_of_Layers": 6
+        },
+        "Packages": {
+            "apt": "2.7.14build2",
+            "base-files": "13ubuntu10",
+            "base-passwd": "3.6.3build1",
+            "bash": "5.2.21-2ubuntu4",
+            "bsdutils": "1:2.39.3-9ubuntu6",
+            "coreutils": "9.4-3ubuntu6",
+            "dash": "0.5.12-6ubuntu5",
+            "debconf": "1.5.86ubuntu1",
+            "debianutils": "5.17build1",
+            "diffutils": "1:3.10-1build1",
+            "dpkg": "1.22.6ubuntu6",
+            "e2fsprogs": "1.47.0-2.4~exp1ubuntu4",
+            "findutils": "4.9.0-5build1",
+            "gcc-14-base": "14-20240412-0ubuntu1",
+            "gpgv": "2.4.4-2ubuntu17",
+            "grep": "3.11-4build1",
+            "gzip": "1.12-1ubuntu3",
+            "hostname": "3.23+nmu2ubuntu2",
+            "init-system-helpers": "1.66ubuntu1",
+            "libacl1": "2.3.2-1build1",
+            "libapt-pkg6.0t64": "2.7.14build2",
+            "libassuan0": "2.5.6-1build1",
+            "libattr1": "1:2.5.2-1build1",
+            "libaudit-common": "1:3.1.2-2.1build1",
+            "libaudit1": "1:3.1.2-2.1build1",
+            "libblkid1": "2.39.3-9ubuntu6",
+            "libbz2-1.0": "1.0.8-5.1",
+            "libc-bin": "2.39-0ubuntu8.2",
+            "libc6": "2.39-0ubuntu8.2",
+            "libcap-ng0": "0.8.4-2build2",
+            "libcap2": "1:2.66-5ubuntu2",
+            "libcom-err2": "1.47.0-2.4~exp1ubuntu4",
+            "libcrypt1": "1:4.4.36-4build1",
+            "libdb5.3t64": "5.3.28+dfsg2-7",
+            "libdebconfclient0": "0.271ubuntu3",
+            "libext2fs2t64": "1.47.0-2.4~exp1ubuntu4",
+            "libffi8": "3.4.6-1build1",
+            "libgcc-s1": "14-20240412-0ubuntu1",
+            "libgcrypt20": "1.10.3-2build1",
+            "libgmp10": "2:6.3.0+dfsg-2ubuntu6",
+            "libgnutls30t64": "3.8.3-1.1ubuntu3.1",
+            "libgpg-error0": "1.47-3build2",
+            "libhogweed6t64": "3.9.1-2.2build1",
+            "libidn2-0": "2.3.7-2build1",
+            "liblz4-1": "1.9.4-1build1",
+            "liblzma5": "5.6.1+really5.4.5-1",
+            "libmd0": "1.1.0-2build1",
+            "libmount1": "2.39.3-9ubuntu6",
+            "libncursesw6": "6.4+20240113-1ubuntu2",
+            "libnettle8t64": "3.9.1-2.2build1",
+            "libnpth0t64": "1.6-3.1build1",
+            "libp11-kit0": "0.25.3-4ubuntu2",
+            "libpam-modules": "1.5.3-5ubuntu5.1",
+            "libpam-modules-bin": "1.5.3-5ubuntu5.1",
+            "libpam-runtime": "1.5.3-5ubuntu5.1",
+            "libpam0g": "1.5.3-5ubuntu5.1",
+            "libpcre2-8-0": "10.42-4ubuntu2",
+            "libproc2-0": "2:4.0.4-4ubuntu3",
+            "libseccomp2": "2.5.5-1ubuntu3",
+            "libselinux1": "3.5-2ubuntu2",
+            "libsemanage-common": "3.5-1build5",
+            "libsemanage2": "3.5-1build5",
+            "libsepol2": "3.5-2build1",
+            "libsmartcols1": "2.39.3-9ubuntu6",
+            "libss2": "1.47.0-2.4~exp1ubuntu4",
+            "libssl3t64": "3.0.13-0ubuntu3.1",
+            "libstdc++6": "14-20240412-0ubuntu1",
+            "libsystemd0": "255.4-1ubuntu8.1",
+            "libtasn1-6": "4.19.0-3build1",
+            "libtinfo6": "6.4+20240113-1ubuntu2",
+            "libudev1": "255.4-1ubuntu8.1",
+            "libunistring5": "1.1-2build1",
+            "libuuid1": "2.39.3-9ubuntu6",
+            "libxxhash0": "0.8.2-2build1",
+            "libzstd1": "1.5.5+dfsg2-2build1",
+            "login": "1:4.13+dfsg1-4ubuntu3",
+            "logsave": "1.47.0-2.4~exp1ubuntu4",
+            "mawk": "1.3.4.20240123-1build1",
+            "mount": "2.39.3-9ubuntu6",
+            "ncurses-base": "6.4+20240113-1ubuntu2",
+            "ncurses-bin": "6.4+20240113-1ubuntu2",
+            "passwd": "1:4.13+dfsg1-4ubuntu3",
+            "perl-base": "5.38.2-3.2build2",
+            "procps": "2:4.0.4-4ubuntu3",
+            "sed": "4.9-2build1",
+            "sensible-utils": "0.0.22",
+            "sysvinit-utils": "3.08-6ubuntu3",
+            "tar": "1.35+dfsg-3build1",
+            "ubuntu-keyring": "2023.11.28.1",
+            "util-linux": "2.39.3-9ubuntu6",
+            "zlib1g": "1:1.3.dfsg-3.1ubuntu2"
+        },
+        "Secrets": [
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "\nMGoCAQAwIQYIKoUDBwEBAQIwFQYJKoUDBwECAQIBBggqhQMHAQECAwRCBECjFpvp\nB0vdc7u59b99TCNXhHiB69JJtUjvieNkGYJpoaaIvoKZTNCjpSZASsZcQZCHOTof\nhsQ3JCCy4xnd5jWT\n",
+                    ""
+                ]
+            },
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "\nMEgCAQAwHwYIKoUDBwEBAQEwEwYHKoUDAgIjAQYIKoUDBwEBAgIEIgQgKOF96tom\nD61rhSnzKjyrmO3fv0gdlHei+6ovrc8SnBk=\n",
+                    ""
+                ]
+            },
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "\nMEUCAQAwHAYGKoUDAgITMBIGByqFAwICIwEGByqFAwICHgEEIgQgdNfuHGmmTdPm\np5dAa3ea9UYxpdYQPP9lbDwzQwG2bJM=\n",
+                    ""
+                ]
+            },
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "MIHbAgEBBEGO2n7NN363qSCvJVdlQtCvudtaW4o0fEufXRjE1AsCrle+VXX0Zh0wY1slSeDHMndpakoiF+XkQ+bhcB867UV6aKAHBgUrgQQAI6GBiQOBhgAEAQb6jDpobyy1tF8Zucg0TMGUzIN2DK+RZJ3QQRdWdirO25OIC3FoFi1Yird6rpoB6HlNyJ7R0bNG9Uv34bSHMn8yAFoiqxUCdJZQbEenMoZsi6COaePe3e0QqvDMr0hEWT23Sr3tLpEV7eZGFfFIJw5wSUp2KOcs+O9WjmoukTWtDKNV",
+                    ""
+                ]
+            },
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "MIGkAgEBBDDevshD6gb+4rZpC9vwFcIwNs4KmGzdqCxyyN40a8uOWRbyf7aHdiSS03oAyKtc4JCgBwYFK4EEACKhZANiAARO1KkPMno2tnNXx1S9EZkp8SOpDCZ4aobHIYv8RHnSmKf8I3OKD6TaoeR+1MwJmNJUH90Bj45WXla68/vsPiFcfVKboxsZYe/npv8e4ugXagVQVBXNZJ859iYPdJR24vo=",
+                    ""
+                ]
+            },
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "\nMHcCAQEEIPAKWV7+pZe9c5EubMNfAEKWRQtP/MvlO9HehwHmJssNoAoGCCqGSM49\nAwEHoUQDQgAE2CNONRio3ciuXtoomJKs3MdbzLbd44VPhtzJN30VLFm5gvnfiCj2\nzzz7pl9Cv0ECHl6yedNI8QEKdcwCDgEmkQ==\n",
+                    ""
+                ]
+            },
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "MGgCAQEEHOKWJFdWdrR/CgVrUeTeawOrJ9GozE9KKx2a8PmgBwYFK4EEACGhPAM6AAQKQj3YpenWT7lFR41SnBvmj/+Bj+kgzQnaF65qWAtPRJsZXFlLTu3/IUNqSRu9DqPsk8xBHAB7pA==",
+                    ""
+                ]
+            },
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "MF8CAQEEGLjezFcbgDMeApVrdtZHvu/k1a8/tVZ41KAKBggqhkjOPQMBAaE0AzIABO1lciKdgxeRH8k64vxcaV1OYIK9akVrW02Dw21MXhRLP0l0wzCw6LGSr5rS6AaLFg==",
+                    ""
+                ]
+            },
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "\nMIIDTQIBAAKCAQEAh60B6yPMRIT7udq2kKuwnQDohvT1U0w+RJcSr23C05cM/Ovn\nUP/8Rrj6T8K+uYhMbKgLaZiJJW9q04jaPQk0cfUphbLvRjzVHwE/0Bkb+Y1Rv7ni\nJot2IFMq5iuNraf889PC0WREvFCcIkSFY2Ac4WT7mCcBtfx/raGFXDUjcUrJ0HwZ\nIOhjQDfcXUsztuyYsYA75ociEY8kyDZq/ixyr5++R1VjNf30Re8AbQlXOEGxEN5t\nt+Tvpq8K5L3prQs2KNSzyOUmedjb/ojH4T4qe/RL9EVjjeuIGHDNUT6F197yZ91y\nqLLTf1WjnUyZcKij5rryX0LJBBWawEZjNSHZawIdAMQlyycia4NigCdiDR+QptUn\n2xrj9o14fXkIrXcCggEAXRZm1rbPhsjSTo6cpCVrmDzO1grv83EHiBH4MvRQQnP8\nFpAREsBA5cYju97XvLaLhioZeMjLn08kU7TUbHRUB+ULTuVvE2dQbBpGuKiLRRt9\n6U2T0eD3xGLoM+o8EY/kpqaWGEpZv7hzM9xuo4vy55+viAZgFWULqmltwfG/7w7V\nNXUHNv5H4Ipw//fSDLTPqzUlNqSSswDLz6pCjWEs0rWAqNAMaOiLTz4id9pL48Oe\noAfpcQR9tgTEnwyXfZBnrJVclHhkHKGeXvU05IgCzpKO76Z5R+By50T0i/JV7vzM\nl2yS9aAl/cprT6U7yI3oU/blldCVNpMcFAFb+fO8DAKCAQBVMo8xptyvQOJeSvbO\nSSYdJ3IiI/0GdkcGWXblWg9z7mrPaWEnT7OquEm/+vYtWd3GHDtyNM+jzsN4Xgjc\nTL3AEd2hLiozJQ1BFKw25VU08UHAYTzUxZhO4Vwtmp46Kwj8YLDQ3NHRWCBxpDQR\nfbiFvyXP+qXap6plMfrydnUD1mae/JSOWOYgdB7tFIehstLxVXx/cAnjwgFU03Df\ngrjsad92zA1Hc9wIjbsgAQdTR5DWnFRkRt3UtayBwoyqm6QceZHsv1NAGvkQ4ion\nbEjkHkjF9YCkR9/rspR8cLghRIXMjOpypuSbaRPeeWq0gP2UOxFL/d3iWH0ETr/L\nkTlCAhxYGpVgtfB96qmJukyl9GOGvfkwFTgEyIDoV84M\n",
+                    ""
+                ]
+            },
+            {
+                "path": "images/files_ubuntu_latest\\usr\\lib\\x86_64_linux_gnu\\libgnutls.so.30.37.1",
+                "name": "Asymmetric Private Key",
+                "description": "private-key",
+                "value": [
+                    "",
+                    "\nMIIEogIBAAKCAQEA6yCv+BLrRP/dMPBXJWK21c0aqxIX6JkODL4K+zlyEURt8/Wp\nnw37CJwHD3VrimSnk2SJvBfTNhzYhCsLShDOPvi4qBrLZ1WozjoVJ8tRE4VCcjQJ\nsnpJ7ldiV+Eos1Z3FkbV/uQcw5CYCb/TciSukaWlI+G/xas9EOOFt4aELbc1yDe0\nhyfPDtoaKfek4GhT9qT1I8pTC40P9OrA9Jt8lblqxHWwqmdunLTjPjB5zJT6QgI+\nj1xuq7ZOQhveNA/AOyzh574GIpgsuvPPLBQwsCQkscr7cFnCsyOPgYJrQW3De2+l\nwjp2D7gZeeQcFQKazXcFoiqNpJWoBWmU0qqsgwIDAQABAoIBAAghNzRioxPdrO42\nQS0fvqah0tw7Yew+7oduQr7w+4qxTQP0aIsBVr6zdmMIclF0rX6hKUoBoOHsGWho\nfJlw/1CaFPhrBMFr6sxGodigZQtBvkxolDVBmTDOgK39MQUSZke0501K4du5MiiU\nI2F89zQ9//m/onvZMeFVnJf95LAX5qHr/FLARQFtOpgWzcGVxdvJdJlYb1zMUril\nPqyAZXo1j0vgHWwSd54k8mBLus7l8KT57VFce8+9nBPrOrqW4rDVXzs/go3S+kiI\nOyzYeUs9czg1N1e3VhEaC+EdYUawc0ASuEkbsJ53L8pwDvS+2ly2ykYziJp95Fjv\nbzyd1dECgYEA8FzGCxu7A6/ei9Dn0Fmi8Ns/QvEgbdlGw4v4MlXHjrGJYdOB0BwG\n2D2k0ODNYKlUX2J4hi5x8aCH33y/v0EcOHyuqM33vOWBVbdcumCqcOmp341UebAO\nuCPgDJNhjxXaeDVPnizqnOBA1B9sTxwmCOmFIiFRLbR+XluvDh3t8L0CgYEA+my6\n124Rw7kcFx+9JoB/Z+bUJDYpefUT91gBUhhEdEMx5fujhMzAbLpIRjFQq+75Qb7v\n0NyIS09B4oKOqQYzVEJwqKY7H71BTl7QuzJ8Qtuh/DMZsVIt6xpvdeuAKpEOqz44\nZD3fW1B59A3ja7kqZadCqq2b02UTk+gdeOrYBj8CgYACX3gZDfoHrEnPKY3QUcI5\nDIEQYR8H1phLP+uAW7ZvozMPAy6J5mzu35Tr9vwwExvhITC9amH3l7UfsLSX58Wm\njRyQUBA9Dir7tKa2tFOab8Qcj+GgnetXSAtjNGVHK1kPzL7vedQLHm+laHYCRe3e\nMqf80UVi5SBGQDN3OTZrJQKBgEkj2oozDqMwfGDQl0kYfJ2XEFynKQQCrVsva+tT\nRSMDwR4fmcmel5Dp81P08U/WExy9rIM+9duxAVgrs4jwU6uHYCoRqvEBMIK4NJSI\nETzhsvTa4+UjUF/7L5SsPJmyFiuzl3rHi2W7InNCXyrGQPjBmjoJTJq4SbiIMZtw\nU7m3AoGACG2rE/Ud71kyOJcKwxzEt8kd+2CMuaZeE/xk+3zLSSjXJzKPficogM3I\nK37/N7N0FjhdQ5hRuD3GH1fcjv9AKdGHsH7RuaG+jHTRUjS1glr17SSQzh6xXnWj\njG0M4UZm5P9STL09nZuWH0wfpr/eg+9+A6yOVfnADI13v+Ygk7k=\n",
+                    ""
+                ]
+            }
+        ]
+    }
+}
+Total number of packages Found: 91
+Total number of Secrets Found: 10
+┏━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━┓
+┃ Library   ┃ Version         ┃ CVE           ┃ Severity ┃ Score ┃
+┡━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━┩
+│ coreutils │ 9.4-3ubuntu6    │ CVE-2024-0684 │ MEDIUM   │ 5.5   │
+│ dash      │ 0.5.12-6ubuntu5 │ CVE-2009-0854 │ MEDIUM   │ 6.9   │
+└───────────┴─────────────────┴───────────────┴──────────┴───────┘
+
+(cenv) E:\Internships\Cy5.io\Github\closec\CLI>python main.py -i alpine:latest 
+2024-08-12 15:47:17,073 - INFO - Database 'closec_cve' already exists.
+
+
+         ▄████▄    ██▓      ▒█████     ██████   ▓█████   ▄████▄
+        ▒██▀ ▀█   ▓██▒     ▒██▒  ██▒  ▒██      ▒▓█   ▀  ▒██▀ ▀█
+        ▒▓█       ▒██░     ▒██░  ██▒░  ▓█████  ▒████    ▒▓█
+        ▒▓▓▄ ▄██▒ ▒██░     ▒██   ██░   ▒   ██▒  ▓█   ▄   ▓▓▄ ▄██▒
+        ▒ ▓███▀ ░ ░██████▒  ░████▓▒░▒  ██████▒  ██████▒  ▓████▀░
+        ░ ░▒ ▒  ░ ░ ▒░░  ░░  ▒░▒░▒░ ▒  ░▒ ▒ ░░  ░ ░░ ░▒    ░ ░ ░
+        ░  ▒   ░  ░ ▒  ░  ░  ▒ ▒░ ░ ░▒  ░ ░ ░ ░  ░  ░  ▒    ░ ░
+        ░          ░ ░   ░    ░ ▒  ░    ░     ░   ░          ░
+
+Pulling alpine:latest...
+Extracting Image alpine:latest...
+2024-08-12 15:47:22,083 - INFO - Scanning Image for Packages...
+Scanning images/files_alpine_latest/lib/apk/db/installed
+2024-08-12 15:47:22,083 - INFO - Scanning Image for Secrets...
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.3",
+    "components": {
+        "Image": "alpine:latest",
+        "Image_Info": {
+            "Architecture": "amd64",
+            "Layers": [
+                "ADD file:99093095d62d0421541d882f9ceeddb2981fe701ec0aa9d2c08480712d5fed21 in /",
+                "CMD [\"/bin/sh\"]"
+            ],
+            "No_of_Layers": 2
+        },
+        "Packages": {
+            "alpine-baselayout": "3.6.5-r0",
+            "alpine-baselayout-data": "3.6.5-r0",
+            "alpine-keys": "2.4-r1",
+            "apk-tools": "2.14.4-r0",
+            "busybox": "1.36.1-r29",
+            "busybox-binsh": "1.36.1-r29",
+            "ca-certificates-bundle": "20240705-r0",
+            "libcrypto3": "3.3.1-r3",
+            "libssl3": "3.3.1-r3",
+            "musl": "1.2.5-r0",
+            "musl-utils": "1.2.5-r0",
+            "scanelf": "1.3.7-r2",
+            "ssl_client": "1.36.1-r29",
+            "zlib": "1.3.1-r1"
+        },
+        "Secrets": []
+    }
+}
+Total number of packages Found: 14
+Total number of Secrets Found: 0
+┏━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━┓
+┃ Library ┃ Version    ┃ CVE            ┃ Severity ┃ Score ┃
+┡━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━┩
+│ busybox │ 1.36.1-r29 │ CVE-2023-42363 │ MEDIUM   │ 5.5   │
+│ busybox │ 1.36.1-r29 │ CVE-2023-42364 │ MEDIUM   │ 5.5   │
+│ busybox │ 1.36.1-r29 │ CVE-2023-42365 │ MEDIUM   │ 5.5   │
+│ busybox │ 1.36.1-r29 │ CVE-2023-42366 │ MEDIUM   │ 5.5   │
+└─────────┴────────────┴────────────────┴──────────┴───────┘

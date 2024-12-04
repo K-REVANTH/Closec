@@ -1,0 +1,8 @@
+CLI/images
+CLI/cenv
+CLI/build
+CLI/dist
+CLI/main.spec
+CLI/nvd
+**/__pycache__
+.vscode
